@@ -22,14 +22,14 @@ class Solution:
                 memo[current] = CAT
                 return memo[current]
 
-            mouse_turn = (level % 2) == 0
-            childResult = CAT if mouse_turn else MOUSE  # Worst case scenario
-            for child in graph[mouse if mouse_turn else cat]:
-                if not mouse_turn and child == 0:
+            mouseTurn = (level % 2) == 0
+            childResult = CAT if mouseTurn else MOUSE  # Worst case scenario
+            for child in graph[mouse if mouseTurn else cat]:
+                if not mouseTurn and child == 0:
                     continue  # The cat can not enter the hole
-                result = dfs(child, cat, level + 1) if mouse_turn else dfs(
+                result = dfs(child, cat, level + 1) if mouseTurn else dfs(
                     mouse, child, level + 1)
-                if result == (MOUSE if mouse_turn else CAT):
+                if result == (MOUSE if mouseTurn else CAT):
                     childResult = result  # Best case scenario
                     break
                 elif result == DRAW:
