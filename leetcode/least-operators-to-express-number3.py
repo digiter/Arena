@@ -27,15 +27,24 @@ class Solution:
             if goal - power == 0:
                 return cost
 
-            # x^i + (goal - power)
+            # # x^i + (goal - power)
+            # choice1 = cost + 1 + solve(goal - power)
+            # if goal - power <= power * x - goal:
+            #     # This is due to the fact that when a <= b, solve(a) <= solve(b)
+            #     return choice1
+            # else:
+            #     # x^(i+1) - (x^(i+1) - goal)
+            #     choice2 = (cost + 1) + 1 + solve(power * x - goal)
+            #     return min(choice1, choice2)
+
+            # The following alternative also works because the if clause ensures
+            # parameter of solve always decreases. That ensures the recursion
+            # always ends.
             choice1 = cost + 1 + solve(goal - power)
-            if goal - power <= power * x - goal:
-                # This is due to the fact that when a <= b, solve(a) <= solve(b)
-                return choice1
-            else:
-                # x^(i+1) - (x^(i+1) - goal)
+            if power * x - goal < goal:
                 choice2 = (cost + 1) + 1 + solve(power * x - goal)
                 return min(choice1, choice2)
+            else:
+                return choice1
 
         return solve(target)
-
