@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/escape-a-large-maze/
-
+# Should be medium difficulty.
 
 class Solution:
     def isEscapePossible(
