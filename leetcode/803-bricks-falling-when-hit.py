@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/bricks-falling-when-hit/
+# 803. Bricks Falling When Hit
 # Applies the hit backwards and merges connected components on the go.
 # O(M*N + M*N + M*N*4*log(M*N) + len(hits)*4*log(M*N))
 
