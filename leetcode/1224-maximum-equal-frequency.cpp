@@ -1,3 +1,5 @@
+// 1224. Maximum Equal Frequency
+
 class Solution {
  public:
   int maxEqualFreq(vector<int>& nums) {

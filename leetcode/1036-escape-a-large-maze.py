@@ -1,5 +1,5 @@
-# https://leetcode.com/problems/escape-a-large-maze/
-# Should be medium difficulty.
+# 1036. Escape a Large Maze
+# The difficulty is hard, but should be medium.
 
 class Solution:
     def isEscapePossible(

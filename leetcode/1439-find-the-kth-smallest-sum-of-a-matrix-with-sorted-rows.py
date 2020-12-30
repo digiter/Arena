@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/
+# 1439. Find the Kth Smallest Sum of a Matrix With Sorted Rows
 # Maintain the first 200 smallest sums and merge the rows one by one.
 # O(40 * 200 * log(200))
 

@@ -1,5 +1,6 @@
-# https://leetcode.com/problems/least-operators-to-express-number/
-# This is wrong becuase choice2 assumes the cost of an extra x^(i+1) is
+# 964. Least Operators to Express Number
+#
+# This solution is wrong becuase choice2 assumes the cost of an extra x^(i+1) is
 # `1+cost[i+1]`. But the minimum cost of x^(i+1) could be using substract
 # instead of addtion.
 from functools import cache

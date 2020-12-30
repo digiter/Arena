@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/cat-and-mouse/
+# 913. Cat and Mouse
 # O(2 * N^3)
 
 from typing import List
