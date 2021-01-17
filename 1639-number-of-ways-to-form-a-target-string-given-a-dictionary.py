@@ -1,4 +1,5 @@
 # 1639. Number of Ways to Form a Target String Given a Dictionary
+# O(len(words) * wordLen + len(words) + len(target))
 
 class Solution:
     def numWays(self, words: List[str], target: str) -> int:
