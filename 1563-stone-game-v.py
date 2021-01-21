@@ -1,6 +1,9 @@
 # 1563. Stone Game V
 # Dynamic programming from bottom up.
-# O(N^2)
+# Time complexity: O(N^2)
+#
+# Note that we can't assume stoneGameV(A) <= stoneGameV(A + [x]), see 
+# https://leetcode.com/problems/stone-game-v/discuss/889244/Please-do-not-assume-monotonicity-like-stoneGameV(A)-stoneGameV(A%3A-1)
 
 class Solution:
     def stoneGameV(self, stoneValue: List[int]) -> int:
