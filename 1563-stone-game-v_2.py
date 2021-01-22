@@ -1,5 +1,7 @@
 # 1563. Stone Game V
 # Time: O(N^2), 5280 ms	
+#
+# Another bottom up dynamic programming.
 # Loops y increasing and x decreasing, in order to enumerate interval [x, y] from small to large.
 # So that the answer of interval [x, y] can be constructed via its sub-intervals.
 
