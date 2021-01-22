@@ -1,6 +1,6 @@
 # 1563. Stone Game V
 # Dynamic programming from bottom up.
-# Time complexity: O(N^2)
+# Time complexity: O(N^2), 6380 ms
 #
 # Note that we can't assume stoneGameV(A) <= stoneGameV(A + [x]), see 
 # https://leetcode.com/problems/stone-game-v/discuss/889244/Please-do-not-assume-monotonicity-like-stoneGameV(A)-stoneGameV(A%3A-1)
