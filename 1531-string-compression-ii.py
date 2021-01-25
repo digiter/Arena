@@ -1,5 +1,6 @@
 # 1531. String Compression II
 # The dynamic programming states are sparse.
+# Time: 2944 ms	
 
 class Solution:
     def getLengthOfOptimalCompression(self, s: str, k: int) -> int:
