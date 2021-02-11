@@ -1,5 +1,5 @@
 # 1458. Max Dot Product of Two Subsequences
-# O(500 ** 2)
+# O(500 ** 2), 816 ms
 class Solution:
     def maxDotProduct(self, nums1: List[int], nums2: List[int]) -> int:
         # Subsequences of nums1 and nums2 can be empty.
