@@ -10,7 +10,7 @@ class Solution:
                 return True
             if sorted(s1) != sorted(s2):
                 return False
-            
+
             # Same order.
             for i in range(1, len(s1)):
                 if solve(s1[:i], s2[:i]) and solve(s1[i:], s2[i:]):
@@ -20,5 +20,6 @@ class Solution:
                 if solve(s1[:i], s2[-i:]) and solve(s1[i:], s2[:-i]):
                     return True
             return False
-        
+
         return solve(s1, s2)
+
